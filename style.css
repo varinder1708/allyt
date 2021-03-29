@@ -1,0 +1,33 @@
+.results > ul > li span{cursor:pointer}
+.results > ul > li > ul > li:nth-child(odd) { background: #DCDCDC; }
+.results > ul > li > ul > li{list-style-type: lower-alpha;   list-style-position: inside;height:40px;line-height: 40px;}
+.results > ul > li{list-style-type:decimal;
+  
+};
+.results > ul > li::before{
+border: solid black;
+border-width: 0 3px 3px 0;
+display: inline-block;
+padding: 3px;
+}
+.results > ul > li span::before{
+    border: solid black;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+    content:"";
+    margin-left: -34px;
+    margin-right: 26px;
+    margin-bottom: 2px;
+}
+
+  .show ::before{
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+  }
+  .hide ::before{
+    transform: rotate(-135deg);
+    -webkit-transform: rotate(-135deg);
+content:"";
+}
+.hide ul {display:none}
